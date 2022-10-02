@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+
+.barcode {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 30px;
+  color: #000;
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.context-menu a {
+  text-decoration: none;
+}
+
+.context-menu ul,
+ol,
+li {
+  list-style: none;
+  overflow: hidden;
+}
+
+.context-menu {
+  z-index: 9;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bg {
+  height: 108%;
+  width: 105%;
+
+  /*
+  background: url('img/cycle.jpg') no-repeat;
+  */
+  background: url('img/velo.jpg') center / cover no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  z-index: -50;
+}
+
+
+.top-content {
+  display: flex;
+  width: 100%;
+}
+
+.top-content span {
+  flex-grow: 1;
+  margin: 50px 70px;
+  display: flex;
+}
+
+.top-content span:last-child {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 575.98px) {
+  .top-content span {
+    margin: 50px 30px;
+  }
+}
+
+.menu {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  transition: all 0.15s linear;
+  border: 1px solid white;
+  box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+}
+
+.bottom-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 70px;
+  margin-top: auto;
+  width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .bottom-content {
+    padding: 50px 30px;
+  }
+}
+
+.bottom-content p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  line-height: 27px;
+  font-size: 20px;
+  margin: 7px 0px 23px 0px;
+  text-shadow: 1px 2px 20px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 575.98px) {
+  .bottom-content p {
+    font-size: 14px;
+  }
+}
+
+.content-left {
+  flex-grow: 1;
+  text-align: center;
+  max-width: 750px;
+  padding: 5px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0);
+}
+
+.content-left .title {
+  font-family: "Lobster", cursive;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 1px 2px 20px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 575.98px) {
+  .content-left .title {
+    font-size: 40px;
+  }
+}
+
+.content-right {
+  z-index: 5;
+  flex-grow: 1;
+  text-align: right;
+  display: flex;
+
+
+  font-family: "Montserrat", sans-serif;
+
+
+
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991.98px) {
+  .content-right {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.content-right p {
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+button,
+button:visited,
+button:focus {
+  cursor: pointer;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.3);
+  width: 160px;
+  padding: 15px 0px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s linear;
+  outline: none;
+}
+
+button:hover,
+button:visited:hover,
+button:focus:hover {
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.text_shadow {
+  text-shadow: 1px 1px 5px #000;
+}
+
+.fullscreen__link {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0;
+}
+
+.link_white {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  transition: all 0.5s ease 0s;
+}
+
+.link_white:hover {
+  background-color: transparent;
+  color: lawngreen;
+  border: 1px solid transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.hover_underline {
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.hover_underline:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease 0s;
+}
+
+.hover_blue:hover {
+  color: #3f51b5;
+  transition: all 0.3s ease 0s;
+}
+
+
+
+.unicode_menu {
+  font-size: 35px;
+  padding: 20px;
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+}
+
+.unicode_menu:hover {
+  font-size: 39px;
+  background-color: #3f51b5;
+  transition: all 0.3s ease 0s;
+}
+
+
+.icon img {
+  width: 150px;
+}

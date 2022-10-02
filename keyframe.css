@@ -1,0 +1,74 @@
+.bg {
+	height: 108%;
+	width: 105%;
+	background: url('img/worlds-fiesta-albukerke.jpg') no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	z-index: -99;
+
+	animation-name: fone;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.content-right p {
+	animation-name: fone;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+.bg2 {
+	height: 108%;
+	width: 105%;
+	background: url('img/mountain-bike.jpg') no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	z-index: -99;
+
+	animation-name: fone2;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fone {
+	0% {
+		z-index: -99;
+	}
+
+	100% {
+		z-index: -98;
+	}
+}
+
+@keyframes fone3 {
+	0% {
+		z-index: -99;
+	}
+
+	67% {
+		z-index: -97;
+	}
+
+	100% {
+		z-index: -97;
+	}
+}
+
+@keyframes fone2 {
+
+	0% {
+		z-index: -98;
+	}
+
+	100% {
+		z-index: -99;
+	}
+}
